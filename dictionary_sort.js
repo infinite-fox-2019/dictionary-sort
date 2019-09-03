@@ -10,7 +10,7 @@ function dictionarySort(arr) {
       }
     }
   }
-  return arr;
+  return arr.join(',');
 }
 
 var arr = ['makan', 'duduk', 'tidur','terbang'];
