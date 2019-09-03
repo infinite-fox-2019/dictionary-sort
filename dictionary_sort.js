@@ -10,7 +10,7 @@ function dictionarySort(dictionaries) {
     }
   }
 
-  return dictionaries;
+  return dictionaries.join(', ');
 
 }
 
