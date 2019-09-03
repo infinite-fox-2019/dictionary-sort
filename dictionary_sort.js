@@ -16,7 +16,7 @@ function dictionarySort(arr){
 			}
 		}
 	}
-	return arr
+	return arr.join(',')
 }
 
 console.log(dictionarySort(["makan", "duduk", "terbang", "tidur"])); 
