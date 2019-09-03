@@ -1,10 +1,17 @@
-function dictionarySort(dictionaries) {
+function dictionarySort(arr) {
   // your code below here...
-  for (var i = 0; i < dictionaries.length-1; i++)
-      if(dictionaries[i]>dictionaries[i+1])dictionaries.splice(i,2,dictionaries[i+1],dictionaries[i])
-  for (var i = 0; i < dictionaries.length-1; i++)
-      if(dictionaries[i] > dictionaries[i+1])return dictionarySort(dictionaries)
-  return dictionaries
+  for(var i = 1; i < arr.length; i++){
+    var temp = arr[i]
+    for(var j = i; j >= 0; j--){
+      if(temp < arr[j]){
+        var tampung = arr[j]
+        arr[j] = temp
+        arr[j+1] = tampung
+      }
+    }
+    // console.log(arr)
+  }
+  return arr
 
 }
 
